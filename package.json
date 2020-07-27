@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "clean": "rm -rf ./images && touch README.md"
+    "clean": "rm -rf ./images && rm README.md && touch README.md"
   },
   "author": "",
   "license": "ISC",

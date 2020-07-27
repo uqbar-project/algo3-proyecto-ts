@@ -57,7 +57,7 @@ npm test
 Este proyecto tiene imágenes .gif y esta explicación en el README, si querés eliminarlos podés correr el script
 
 ```bash
-npm clean
+npm run clean
 ```
 
 ## Archivos de configuración
