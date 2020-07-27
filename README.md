@@ -28,17 +28,23 @@ Recordá que tu instalación de Visual Studio Code requiere las extensiones que 
 
 ## Para ejecutar los tests
 
-Podés usar los plugins `Jest` que los ejecuta dentro de tu editor:
+### Plugin Jest
+
+Podés usar el plugin `Jest` que los ejecuta dentro de tu editor:
 
 ![plugin Jest](./images/jest.gif)
 
-o bien el `Jest Runner` que te da la opción de ejecutar o debuggear un test (aunque ya podés ver el preview si tenés la extensión Jest):
+### Plugin Jest Runner
+
+El `Jest Runner` que te da la opción de ejecutar o debuggear un test (aunque ya podés ver el preview si tenés la extensión Jest):
 
 ![jest runner](./images/jestRunner.gif)
 
-El plugin `Jest Runner` te permite debuggear y avanzar paso a paso con F10 con un simple botón derecho:
+También te permite debuggear y avanzar paso a paso con F10 con un simple botón derecho:
 
 ![debuggeando tests](./images/jestDebug.gif)
+
+### Por línea de comando
 
 Y por último, desde el Git Bash o la línea de comando:
 
@@ -53,8 +59,6 @@ Este proyecto tiene imágenes .gif y esta explicación en el README, si querés 
 ```bash
 npm clean
 ```
-
-
 
 ## Archivos de configuración
 
