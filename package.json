@@ -1,7 +1,7 @@
 {
-  "name": "eg-promises-ts",
+  "name": "eg-proyecto-ts",
   "version": "1.0.0",
-  "description": "Ejemplos varios - Promises",
+  "description": "Proyecto de Ejemplo para Algo 3",
   "main": "index.js",
   "scripts": {
     "test": "jest",
