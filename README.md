@@ -1,4 +1,6 @@
 
+[![Build Status](https://travis-ci.org/uqbar-project/eg-rapidos-y-objetosos-ts.svg?branch=master)](https://travis-ci.org/uqbar-project/eg-rapidos-y-objetosos-ts)
+
 ## Proyecto Typescript desde cero
 
 - En la carpeta `src` podés comenzar a escribir tus archivos `.ts`.
