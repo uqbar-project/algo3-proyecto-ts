@@ -52,6 +52,20 @@ Y por último, desde el Git Bash o la línea de comando:
 npm test
 ```
 
+### % de cobertura y badge
+
+```bash
+npm run test:badges
+```
+
+Esto automáticamente genera una carpeta `coverage/lcov-report/index.html` que podés navegar localmente para analizar las líneas de código alcanzadas por el testeo unitario automatizado. Por otra parte en la misma carpeta `coverage` genera los badges que podés agregar a tu README (junto con el badge del build de Github Actions, que viene en este archivo):
+
+```bash
+[![build](https://github.com/uqbar-project/XXXXXXXX/actions/workflows/build.yml/badge.svg)](https://github.com/uqbar-project/XXXXXXXX/actions/workflows/build.yml) ![Coverage](./coverage/badge-statements.svg) ![Coverage](./coverage/badge-lines.svg)
+```
+
+Reemplazar `XXXXXXXX` por la carpeta asociada al proyecto.
+
 ## Para borrar archivos extras
 
 Este proyecto tiene imágenes .gif y esta explicación en el README, si querés eliminarlos podés correr el script
