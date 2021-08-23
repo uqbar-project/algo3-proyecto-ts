@@ -82,4 +82,4 @@ Estos son todos los archivos de configuración de tu proyecto:
 - `package.json`: indica las dependencias del proyecto, la versión semántica, entre otras cosas.
 - `package-lock.json`: es importante subirlo a git, tiene las dependencias exactas y completas del proyecto.
 - `jest.config.js`: es el archivo de configuración de Jest, el framework de testeo unitario que utilizamos.
-- `eslintrc`: la configuración del _linter_, que es el proceso que valida la correctitud del código. Por ejemplo, si definimos una variable `let` y no cambiamos la referencia, el linter nos va a pedir que la cambiemos a una definición `const`.
+- `.eslintrc`: la configuración del _linter_, que es el proceso que valida la correctitud del código. Por ejemplo, si definimos una variable `let` y no cambiamos la referencia, el linter nos va a pedir que la cambiemos a una definición `const`.
