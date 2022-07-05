@@ -6,11 +6,19 @@
 
 ## Antes de empezar a usarlo
 
-Ejecutá el siguiente comando
+Ejecutá el siguiente comando en la terminal:
 
 ```bash
 npm i
 ```
+
+De esa manera vas a instalar las dependencias de tu proyecto. También recomendamos que ejecutes en al consola
+
+```bash
+nvm install
+```
+
+Así vas a instalar la versión de Node que recomendamos en la materia, a través de NVM (Node Version Manager).
 
 ## Para editar el Proyecto
 
@@ -38,11 +46,11 @@ Podés usar el plugin `Jest` que los ejecuta dentro de tu editor:
 
 El `Jest Runner` que te da la opción de ejecutar o debuggear un test (aunque ya podés ver el preview si tenés la extensión Jest):
 
-![jest runner](./images/jestRunner.gif)
+![jest runner](./images/jestRunner2.gif)
 
 También te permite debuggear y avanzar paso a paso con F10 con un simple botón derecho:
 
-![debuggeando tests](./images/jestDebug.gif)
+![debuggeando tests](./images/jestDebug2.gif)
 
 ### Por línea de comando
 

@@ -1,5 +1,6 @@
 describe('empty test', () => {
   test('fake test', () => {
-    expect(1 + 1).toBe(2)
+    const suma = 1 + 10
+    expect(suma).toBe(11)
   })
 })
