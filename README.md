@@ -16,6 +16,7 @@ De esa manera vas a instalar las dependencias de tu proyecto. También recomenda
 
 ```bash
 nvm install
+nvm use
 ```
 
 Así vas a instalar la versión de Node que recomendamos en la materia, a través de NVM (Node Version Manager).
@@ -36,21 +37,19 @@ Recordá que tu instalación de Visual Studio Code requiere las extensiones que 
 
 ## Para ejecutar los tests
 
-### Plugin Jest
+### Ejecutar tests
 
-Podés usar el plugin `Jest` que los ejecuta dentro de tu editor:
+Podés usar el plugin `Vitest` que los ejecuta dentro de tu editor:
 
-![plugin Jest](./images/jest.gif)
+![plugin Vitest](./images/vitest.gif)
 
-### Plugin Jest Runner
+### Debug tests
 
-El `Jest Runner` que te da la opción de ejecutar o debuggear un test (aunque ya podés ver el preview si tenés la extensión Jest):
+Haciendo click derecho te habilita otras opciones, como por ejemplo iniciar un debugger sobre un test parándote en un breakpoint previamente definido:
 
-![jest runner](./images/jestRunner2.gif)
+![debug vitest](./images/debug-vitest.gif)
 
-También te permite debuggear y avanzar paso a paso con F10 con un simple botón derecho:
-
-![debuggeando tests](./images/jestDebug2.gif)
+Podés avanzar paso a paso, ingresar a cada método o función, etc. Para más información podés ver [esta página](https://code.visualstudio.com/docs/debugtest/debugging) donde está la documentación oficial.
 
 ### Por línea de comando
 
@@ -63,16 +62,10 @@ npm test
 ### % de cobertura y badge
 
 ```bash
-npm run test:badges
+npm run test:coverage
 ```
 
-Esto automáticamente genera una carpeta `coverage/lcov-report/index.html` que podés navegar localmente para analizar las líneas de código alcanzadas por el testeo unitario automatizado. Por otra parte en la misma carpeta `coverage` genera los badges que podés agregar a tu README (junto con el badge del build de Github Actions, que viene en este archivo):
-
-```bash
-[![build](https://github.com/uqbar-project/XXXXXXXX/actions/workflows/build.yml/badge.svg)](https://github.com/uqbar-project/XXXXXXXX/actions/workflows/build.yml) ![Coverage](./coverage/badge-statements.svg) ![Coverage](./coverage/badge-lines.svg)
-```
-
-Reemplazar `XXXXXXXX` por la carpeta asociada al proyecto.
+Eso te genera una carpeta `coverage` donde adentro podés navegar la página `index.html` en cualquier navegador.
 
 ## Para borrar archivos extras
 
@@ -89,5 +82,5 @@ Estos son todos los archivos de configuración de tu proyecto:
 - `tsconfig.json`: es el archivo de configuración de Typescript de tu proyecto, que indica a qué versión de Javascript se está transpilando, eso indica qué herramientas podemos usar (por ejemplo, los decoradores de JS vienen en la versión ES2017)
 - `package.json`: indica las dependencias del proyecto, la versión semántica, entre otras cosas.
 - `package-lock.json`: es importante subirlo a git, tiene las dependencias exactas y completas del proyecto.
-- `jest.config.js`: es el archivo de configuración de Jest, el framework de testeo unitario que utilizamos.
+- `vitest.config.js`: es el archivo de configuración de Jest, el framework de testeo unitario que utilizamos.
 - `.eslintrc`: la configuración del _linter_, que es el proceso que valida la correctitud del código. Por ejemplo, si definimos una variable `let` y no cambiamos la referencia, el linter nos va a pedir que la cambiemos a una definición `const`.
